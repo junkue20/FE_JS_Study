@@ -1,0 +1,23 @@
+{
+  "name": "fe_js_study",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel ./index.html",
+    "build" : "parcel build ./index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/junkue20/FE_JS_Study.git"
+  },
+  "author": "junkue20",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/junkue20/FE_JS_Study/issues"
+  },
+  "homepage": "https://github.com/junkue20/FE_JS_Study#readme",
+  "devDependencies": {
+    "parcel": "^2.9.3"
+  }
+}
