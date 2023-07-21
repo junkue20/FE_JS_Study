@@ -142,13 +142,13 @@
       this[globalName] = mainExports;
     }
   }
-})({"lRicq":[function(require,module,exports) {
+})({"hNiMf":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "a4beab58eac6c683";
+module.bundle.HMR_BUNDLE_ID = "0eff634730d2bf7e";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -573,31 +573,33 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
     });
 }
 
-},{}],"40bH3":[function(require,module,exports) {
-//  프로토타입
-// const fruits = ['사과', '바나나', '체리']  // 배열 리터럴 (기호를 사용)
-const fruits = new Array("사과", "바나나", "체리");
-console.log(fruits);
-console.log(fruits.length);
-console.log(fruits.includes("수박"));
-// new Array() 생성자 함수를 통해 생성한 배열 데이터는 length, includes 라는 속성을 사용할 수 있음.
-// 이러한 속성들을 '프로토타입 속성' or '프로토타입 메소드' 라고 이야기함.
-Array.prototype.junkue = function() {
-    console.log(this);
-};
-// Array 객체에서 프로토타입으로 junkue라는 메소드를 등록함.
-fruits.junkue() // fruits에서 해당 메소드를 실행 
-;
-const arr = [];
-arr.junkue();
-/*----------------------------------------------------------*/ const user = {
-    firstName: "Junkue",
-    lastname: "Park",
-    getFullName: function() {
+},{}],"hMv8C":[function(require,module,exports) {
+// ES6 Classes
+/* ------------------------------------------------ */ // ES6 방식
+// function User(first, last){
+//     this.firstName = first
+//     this.lastName = last
+// }
+// User.prototype.getFullName = function () {
+// return `${this.firstName} ${this.lastName}`
+// }
+/* ------------------------------------------------ */ // class 방식
+class User {
+    constructor(first, last){
+        this.firstName = first;
+        this.lastName = last;
+    }
+    getFullName() {
         return `${this.firstName} ${this.lastName}`;
     }
-};
+}
+const junkue = new User(`준규`, `박`);
+const jason = new User(`Jason`, `Mraz`);
+console.log(junkue);
+console.log(jason);
+console.log(junkue.getFullName());
+console.log(jason.getFullName());
 
-},{}]},["lRicq","40bH3"], "40bH3", "parcelRequire84ae")
+},{}]},["hNiMf","hMv8C"], "hMv8C", "parcelRequire84ae")
 
-//# sourceMappingURL=index.eac6c683.js.map
+//# sourceMappingURL=index.30d2bf7e.js.map
